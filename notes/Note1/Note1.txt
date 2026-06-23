@@ -1,7 +1,0 @@
-tela jogo
-- background
-- importar sprites
-
-tela inicial
-
-tela loja
