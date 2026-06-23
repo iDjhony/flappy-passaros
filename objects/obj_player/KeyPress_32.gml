@@ -1,5 +1,5 @@
 
-
+if global.perdeu exit;
 
 
 
