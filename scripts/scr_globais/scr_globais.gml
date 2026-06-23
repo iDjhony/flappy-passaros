@@ -4,6 +4,8 @@ global.perdeu = false
 global.pontos = 0
 global.level = 1
 
+global.lista_pontos = [100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000]
+
 #endregion
 
 #region funções
@@ -16,7 +18,6 @@ function perde_jogo() {
 	obj_player.vspeed = -4;
 	obj_player.hspeed = -1;
 	
-	obj_passaro.hspeed = -2
 
 	layer_hspeed("bg_reflexo_2", 0.5);
 	layer_hspeed("bg_arvores", 0);
