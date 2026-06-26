@@ -8,6 +8,10 @@ global.lista_pontos = [100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000]
 
 global.coletaveis = 0
 
+// váriáveis de transição
+global.destino = rm_jogo
+global.transicao = false
+
 #endregion
 
 #region funções
@@ -17,8 +21,8 @@ function perde_jogo() {
 	
 	global.perdeu = true;
 
-	obj_player.vspeed = -4;
-	obj_player.hspeed = -1;
+	vspeed = -4;
+	hspeed = -1;
 	
 
 	layer_hspeed("bg_reflexo_2", 0.5);
@@ -26,7 +30,25 @@ function perde_jogo() {
 	layer_hspeed("bg_reflexo_arvores", 0);
 
 
-	obj_player.alarm[0] = game_get_speed(gamespeed_fps) * 2;
+	//alarm[0] = game_get_speed(gamespeed_fps) * 2;
+	alarm[0] = game_get_speed(gamespeed_fps);
+
+	global.destino = rm_inicio
+	layer_sequence_create("Transicao", 0, 0, sq_transicao1)
+	
+
 }
+
+function muda_room() {
+	global.transicao = true
+	
+	room_goto(global.destino)
+}
+
+
+function finaliza_transicao() {
+	global.transicao = false
+}
+
 
 #endregion
