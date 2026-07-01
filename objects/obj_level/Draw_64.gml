@@ -7,7 +7,7 @@ draw_set_font(fnt_pontos)
 draw_text(20, 20, "pontos: " + string(int64(global.pontos)))
 
 //coletavel
-draw_sprite_ext(spr_coletavel, 0, 40, 82, 1, 1, 0, c_white, 1)
+draw_sprite_ext(spr_icone_coletavel, 0, 40, 82, 2, 2, 0, c_white, 1)
 draw_text(75, 65, global.coletaveis)
 
 draw_sprite_ext(spr_level, global.level, _meio_da_tela, 30, 2, 2, 0, c_white, 1)

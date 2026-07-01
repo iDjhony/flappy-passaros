@@ -25,7 +25,7 @@
   ],
   "name":"spr_passaro_2",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Passaros",
     "path":"folders/Sprites/Passaros.yy",
@@ -84,7 +84,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":45,
-    "yorigin":49,
+    "yorigin":46,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

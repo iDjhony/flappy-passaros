@@ -6,11 +6,22 @@ global.level = 1
 
 global.lista_pontos = [100, 250, 500, 800, 1200, 1800, 2500, 3500, 5000]
 
-global.coletaveis = 0
+global.coletaveis = 50
 
 // váriáveis de transição
 global.destino = rm_jogo
 global.transicao = false
+
+
+//lista de itens bloqueados da loja
+global.itens_bloqueados = [false, true, true]
+
+
+//sprite selecionada do player
+global.sprite_player = spr_passaro_1
+
+
+
 
 #endregion
 
